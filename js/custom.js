@@ -174,12 +174,7 @@
 			autoplayTimeout: 4000,
 			animateOut: 'fadeOut',
 			responsiveRefreshRate: 0,
-			onInitialized: function(event) {
-			  centerSlideImages(event);
-			},
-			onResized: function(event) {
-			  centerSlideImages(event);
-			},
+			
 		});
 	});
 	

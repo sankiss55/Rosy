@@ -13,10 +13,12 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -67,9 +69,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#products">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
@@ -275,106 +274,102 @@
 			<div class="gallery-menu row">
 				<div class="col-md-12">
 					<div class="button-group filter-button-group text-center">
-						<button class="hvr-rectangle-out active" data-filter="*">All</button>
-						<button class="hvr-rectangle-out" data-filter=".gal_a">Office</button>
-						<button class="hvr-rectangle-out" data-filter=".gal_b">Indoor</button>
-						<button class="hvr-rectangle-out" data-filter=".gal_c">Living Room </button>
-						<button class="hvr-rectangle-out" data-filter=".gal_d">Ecommercial</button>
+						<button class="hvr-rectangle-out active" data-filter="*">Todos</button>
+						<button class="hvr-rectangle-out" data-filter=".gal_a">Regalos</button>
+						<button class="hvr-rectangle-out" data-filter=".gal_b">Navidad</button>
+						<button class="hvr-rectangle-out" data-filter=".gal_c">Dia de Muertos</button>
+						<button class="hvr-rectangle-out" data-filter=".gal_d">14 de Febrero</button>
 					</div>
 				</div>
 			</div>
 			
 			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a ">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Office Interior</h3>
-							<a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						<img src="./productos/producto1.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a ">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Office Interior</h3>
-							<a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						
+						<img src="./productos/producto2.jpg" class="img-fluid" alt="Image">
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_c">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Indoor Interior</h3>
-							<a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						<img src="./productos/producto3.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a ">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Indoor Interior</h3>
-							<a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						
+						<img src="./productos/producto4.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_d">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a ">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Living Room </h3>
-							<a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						<img src="./productos/producto6.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_d">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Living Room </h3>
-							<a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						<img src="./productos/producto7.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b ">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-07.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Ecommercial Room </h3>
-							<a href="uploads/gallery_img-07.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						<img src="./productos/producto8.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_d gal_c">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b ">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-08.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Ecommercial Room </h3>
-							<a href="uploads/gallery_img-08.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						<img src="./productos/producto10.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_d gal_a">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_d">
 					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-09.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<h3>Ecommercial Room </h3>
-							<a href="uploads/gallery_img-09.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
+						<img src="./productos/producto11.jpg" class="img-fluid" alt="Image">
+						
 					</div>
 				</div>
-				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b ">
+					<div class="gallery-single fix">
+						<img src="./productos/producto12.jpg" class="img-fluid" alt="Image">
+						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b ">
+					<div class="gallery-single fix">
+						<img src="./productos/producto13.jpg" class="img-fluid" alt="Image">
+						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 gallery-grid  gal_c">
+					<div class="gallery-single fix">
+						<img src="./productos/producto14.jpg" class="img-fluid" alt="Image">
+						
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 gallery-grid  gal_c">
+					<div class="gallery-single fix">
+						<img src="./productos/producto15.jpg" class="img-fluid" alt="Image">
+						
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -594,12 +589,16 @@
             <div class="footer-distributed">
                 <div class="footer-left">
                     <p class="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">About</a>
-                        <a href="#">Faq</a>
-                        <a href="#">Contact</a>
+							<a class="nav-link js-scroll-trigger active" href="#home">Inicio</a>
+						 
+							<a class="nav-link js-scroll-trigger" href="#about"> Nosotros</a>
+						
+							<a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
+						  
+							<a class="nav-link js-scroll-trigger" href="#products">Productos</a>
+						  
                     </p>
+					<p>Colavoracion con <a href=""> @07san_vs12</a></p>
                 </div>
             </div>
         </div><!-- end container -->
@@ -621,5 +620,12 @@
     <script src="js/contact_me.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+	<script>
+		document.addEventListener("scroll", function(){
+			if(document.getElementById("ascrail2000")){
+				document.getElementById("ascrail2000").remove()
+			}
+		});
+	</script>
 </body>
 </html>
